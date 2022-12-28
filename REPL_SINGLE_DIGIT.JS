@@ -1,3 +1,6 @@
 max=6;
 min=1
-console.log( Math.floor(Math.random() * (max - min) + min));
+let x=( Math.floor(Math.random() * (max - min) + min));
+let y=( Math.floor(Math.random() * (max - min) + min));
+let result = x+y;
+console.log(result);
