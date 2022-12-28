@@ -1,4 +1,4 @@
-//1ft = 12 in then 42 in = ? ft
-let ft=99;
-let inch=(1/12)*ft;
-console.log("ft:",ft,"inches :",inch);
+//1 square foot = 0.092903 square meters
+let squareft= 60*40;
+let squaremeters=squareft/10.764;
+console.log("squareft:",squareft,"squaremeters :",squaremeters);
