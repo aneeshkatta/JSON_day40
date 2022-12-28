@@ -1,12 +1,10 @@
-//program that takes day and month from the command line and prints true if day of month is between March 20 and June 20, false otherwise.
-month=6;
-day=20;
-year=2020;
-if ((month <= 6 && month>=3)& year==2020)
+//Write a program that takes a year as input and outputs the Year is a Leap Year or nota Leap Year.
+let year=2000;
+if (year%400==0)
 {
-    console.log("valid date");
+    console.log("its a Leap year");
 }
 else
 {
-    console.log("invalid date");
+    console.log("its not a Leap year");
 }
