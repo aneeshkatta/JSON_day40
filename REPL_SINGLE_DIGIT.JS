@@ -1,5 +1,12 @@
-let deg_Celsius =200;
-let deg_Farheit = ((deg_Celsius * 9) / 5 )+ 32;
-console.log("result of celcius to farheit:", deg_Farheit);
-
-
+function Findpalindrome(TestStr) {
+    var PlainStr= TestStr.toLowerCase().split("");
+    for(var i=0; i <=(PlainStr.length); i++){
+    if(PlainStr[i] == PlainStr[PlainStr.length-i-1]){
+    return true;
+    } else
+    return false;
+    }
+    } 
+    console.log(Findpalindrome("maam"));
+    console.log(Findpalindrome("rar"));   
+    console.log(Findpalindrome("kak"));
