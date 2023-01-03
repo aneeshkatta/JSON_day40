@@ -1,7 +1,16 @@
-let N=10;//nth harmonic number
-let harmonicNumberTotal=0;//total sum
-for(i=1;i<N;i++)
+let num=5;let a=0;let i;
+for (i = 1; i < num; i++)
 {
-   harmonicNumberTotal=harmonicNumberTotal+(1/i);
+    if (num % i == 0 && num!=0 && num!=1)
+    {
+        a++;
+    }
 }
-console.log(harmonicNumberTotal);
+if(a==1)
+{
+    console.log( num+ " is Prime Number");
+}
+else
+{
+    console.log( num+ " is not a Prime Number");
+}
