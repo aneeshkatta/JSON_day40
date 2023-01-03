@@ -1,6 +1,7 @@
-let num=2;
-for(i=1;i<11;i++)
+let N=10;//nth harmonic number
+let harmonicNumberTotal=0;//total sum
+for(i=1;i<N;i++)
 {
-    console.log(""+num+"*"+i+"="+num*i);
+   harmonicNumberTotal=harmonicNumberTotal+(1/i);
 }
-
+console.log(harmonicNumberTotal);
