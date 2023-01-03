@@ -1,15 +1,18 @@
-var prompt =require('prompt-sync')();
-var input =prompt("enter the power number of base 2 (till 8 only )");
-var N=parseInt(input);
-if(N<=8)
+function findMagicNumber() 
 {
-    for(let i=0;i<=N;i++)
-    {
-        const power=Math.pow(2,i)
-        console.log(`2^${i}=${power}`);
+    var prompt =require('prompt-sync')();
+    const n = prompt('Enter a number n between 1 and 100');
+    let low = 1;
+    let high = 100;
+    while (low < high) {
+        const mid = Math.floor((low + high) / 2);
+        const response = prompt(`Is the magic number less than or equal to ${mid}? (yes/no)`);
+        if (response === 'yes') {
+        high = mid;
+        } else {
+        low = mid + 1;
+        }
     }
-}
-else
-{
-    console.log('Enter below 8 only');
-}
+console.log("Magic number:"+low);
+}  
+findMagicNumber();
