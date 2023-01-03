@@ -1,9 +1,5 @@
-let coinFlip = Math.floor(Math.random() * 2);
-if (coinFlip==0)
+let num=2;
+for(i=1;i<11;i++)
 {
-    console.log("Heads won");
-}
-else
-{
-    console.log("Tails won");
+    console.log(""+num+"*"+i+"="+num*i);
 }
